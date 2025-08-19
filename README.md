@@ -11,9 +11,14 @@ It combines **hardware (KiCAD PCB design)** and **firmware (Arduino/C++ code)** 
 
 ## 📂 Repository Structure
 
-├── hardware/ # KiCAD PCB design files (schematics & layout)
-└── src/ # Source code (Arduino / ESP-IDF compatible)
+```
 
+├── hardware/      # KiCAD PCB design files (schematics & layout)
+└── src/           # Source code (Arduino / ESP-IDF compatible)
+
+````
+
+---
 
 ## ⚙️ Features
 
@@ -77,21 +82,18 @@ It combines **hardware (KiCAD PCB design)** and **firmware (Arduino/C++ code)** 
 
 5. Use your Matter controller app to commission the device.
 
-🛠️ Future Work
+## 🛠️ Future Work
 
-- Expose BL0942 Power/Current as native Matter attributes.
+* Expose BL0942 **Power/Current** as native Matter attributes.
+* Add Matter endpoints for **Pressure** & **Gas Resistance**.
+* Add **configurable boot behavior** (restore last state vs always OFF).
 
-- Add Matter endpoints for Pressure & Gas Resistance.
-
-- Implement OTA updates & web-based config.
-
-- Add configurable boot behavior (restore last state vs always OFF).
+---
 
 ## ⚠️ Disclaimer
-This project is provided as-is, without warranty of any kind.
 
-## ⚡ Caution: This project involves mains-level voltages (relays, energy metering).
-Only experienced users should build or test this hardware. Always follow electrical safety best practices when working with AC-powered circuits.
+This project is provided **as-is**, without warranty of any kind.
+⚡ **Caution:** This project involves **mains-level voltages** (relays, energy metering).
+Only experienced users should build or test this hardware. Always follow **electrical safety best practices** when working with AC-powered circuits.
 
-The author is not responsible for any damage, injury, or loss caused by misuse of this code or hardware.
-
+The author is **not responsible** for any damage, injury, or loss caused by misuse of this code or hardware.
